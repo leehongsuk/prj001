@@ -67,7 +67,7 @@ public class SampleSessionFactory
     
     public  static void main(String args[])
     {
-         SampleSessionFactory a = new SampleSessionFactory();
+        SampleSessionFactory a = new SampleSessionFactory();
         a.demo();
     }
 }
