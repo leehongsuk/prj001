@@ -13,11 +13,8 @@ import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class SampleSessionFactory
 {
-
     public void demo()
     {
-        
-
         // 앞서 정의했던 xml 설정 파일의 위치와 파일명.
         String resource = "com/mybatis/sample/sql/mybatis-config.xml";
 
@@ -66,7 +63,6 @@ public class SampleSessionFactory
 
         session.commit();
         session.close();
-
     }
     
     public  static void main(String args[])
@@ -74,5 +70,4 @@ public class SampleSessionFactory
          SampleSessionFactory a = new SampleSessionFactory();
         a.demo();
     }
-
 }
