@@ -27,6 +27,7 @@ public class SampleSessionFactory
         props.put("url", "jdbc:mysql://localhost/mysql");
         props.put("username", "root");
         props.put("password", "l2619097");
+        
         /*
         //props.put("driver", "oracle.jdbc.OracleDriver");
         props.put("driver", "core.log.jdbc.driver.OracleDriver");
