@@ -17,6 +17,7 @@
             <th>데이터베이스</th>
         </tr>
         <%
+        /* mysql ...
         try
         {
         	Class.forName("com.mysql.jdbc.Driver");
@@ -46,7 +47,7 @@
         {
             System.out.println("SQLException: " + sqex.getMessage());
             System.out.println("SQLState: " + sqex.getSQLState());
-        }
+        }*/
         %>
     </table>
 </body>
