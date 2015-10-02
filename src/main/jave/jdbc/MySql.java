@@ -1,4 +1,5 @@
 package jdbc;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -10,6 +11,8 @@ public class MySql
     {
         try
         {
+            Class.forName("com.mysql.jdbc.Driver");
+
             Connection con = null;
 
             con = DriverManager.getConnection("jdbc:mysql://localhost", "root", "l2619097");
@@ -26,10 +29,15 @@ public class MySql
 
             while (rs.next())
             {
-                String str = rs.getNString(1);
+                String str = rs.getString(1);
                 System.out.println(str);
             }
-        } catch (SQLException sqex)
+        }
+        catch ( ClassNotFoundException e )
+        {
+            e.printStackTrace();
+        }
+        catch ( SQLException sqex )
         {
             System.out.println("SQLException: " + sqex.getMessage());
             System.out.println("SQLState: " + sqex.getSQLState());
