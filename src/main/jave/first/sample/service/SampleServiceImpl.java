@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 
 import first.sample.dao.SampleDAO;
 
-@Service("SampleService")
+@Service("sampleService")
 public class SampleServiceImpl implements SampleService
 {
 

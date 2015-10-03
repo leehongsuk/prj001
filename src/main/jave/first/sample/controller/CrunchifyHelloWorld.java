@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class CrunchifyHelloWorld {
  
-    @RequestMapping("/welcome.do")
+    @RequestMapping("/aaa1.do")
     public ModelAndView helloWorld() {
  
         String message = "<br><div style='text-align:center;'>"

@@ -11,10 +11,10 @@ import first.sample.service.SampleService;
 @Controller
 public class SampleController
 {
-    //@Resource(name = "sampleService")
-    //private SampleService sampleService;
+    @Resource(name = "sampleService")
+    private SampleService sampleService;
 
-    @RequestMapping(value = "/openSampleBoardList.do")
+    @RequestMapping(value = "/aaa2.do")
     public ModelAndView openSampleBoardList(Map<String, Object> map) throws Exception
     {
         ModelAndView mv = new ModelAndView("boardList");
